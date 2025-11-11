@@ -23,17 +23,10 @@ class Weapon
     private:
         std::string type;
     public:
-        Weapon(std::string type_param) :type(type_param) 
-        {
-            std::cout << "A " << RED << type << WHITE << " is visible on the weapon rack." << std::endl;
-        }
-        ~Weapon() {std::cout << type << " was destroyed." << std::endl;}
-        void setType(std::string newType) 
-        {
-            std::cout << RED << type << WHITE << " was swapped with " << RED << newType << WHITE << std::endl;
-            type = newType;
-        }
-        std::string getType() {return type;}
+        Weapon(std::string type_param);
+        ~Weapon();
+        void setType(std::string newType);
+        std::string getType();
 };
 
  #endif

@@ -9,6 +9,9 @@ int main(int argc, char *argv[])
     {
         say.complain(argv[1]);
     }
+    else
+        std::cout << "invalid argument" << std::endl;
+
 
     return (0);
 }

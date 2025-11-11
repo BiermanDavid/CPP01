@@ -19,14 +19,14 @@ int main(int argc, char *argv[])
     if (argc != 4)
     {
         std::cout << "Try ./sed <filename> <string1> <string2>" << std::endl;
-        return (1);
+        return (0);
     }
     
     infile.open(argv[1]);
     if (!infile.is_open())
     {
         std::cout << "//ERROR: File not found." << std::endl;
-        return (1);
+        return (0);
     }
     else
         std::cout << "file " << argv[1] << " was opened." << std::endl;

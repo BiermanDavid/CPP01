@@ -5,6 +5,7 @@ OBJ_DIR = objects
 SRC =	main.cpp \
 		HumanA.cpp \
 		HumanB.cpp \
+		Weapon.cpp \
 
 OBJ = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRC))
 

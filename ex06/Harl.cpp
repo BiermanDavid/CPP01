@@ -52,19 +52,4 @@ void Harl::complain( std::string level)
             std::cout << "invalid argument" << std::endl;
             break;
     }
-
-    // int index = 0;
-
-    // void (Harl::*functions[])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
-
-    
-    // while (index < 4)
-    // {
-    //     if (levels[index] == level)
-    //     {
-    //         (this->*functions[index])();
-    //         return;
-    //     }
-    //     index++;
-    // }
 }
